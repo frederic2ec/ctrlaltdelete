@@ -35,7 +35,7 @@
 import _ from 'lodash'
 
 export default {
-  name: 'Tech',
+  name: 'Apple',
   data() {
     return {
       posts: [],
@@ -87,7 +87,7 @@ export default {
   },
   head() {
     return {
-      title: 'Tech'
+      title: 'Apple'
     }
   }
 }
