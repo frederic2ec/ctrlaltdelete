@@ -1,10 +1,10 @@
-# expressgazette
+# ctrlaltdelete
 
-> Express Gazette on Nuxt.JS
+> Ctrl, Alt, Delete on Nuxt.JS
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm run install
 

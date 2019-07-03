@@ -1,7 +1,7 @@
 {
-  "name": "expressgazette",
+  "name": "ctrlaltdelete",
   "version": "1.0.0",
-  "description": "Express Gazette on Nuxt.JS",
+  "description": "Ctrl Alt Delete on Nuxt.JS",
   "author": "frederic2ec",
   "private": true,
   "scripts": {

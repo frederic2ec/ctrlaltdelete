@@ -6,8 +6,8 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + 'The Express Gazette',
-    title: 'The Express Gazette' || '',
+    titleTemplate: '%s - ' + 'Ctrl, Alt, Delete',
+    title: 'Ctrl, Alt, Delete' || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

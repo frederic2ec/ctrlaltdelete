@@ -34,7 +34,7 @@
     </v-navigation-drawer>
     <v-toolbar clipped-left fixed app>
       <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-toolbar-title>The Express Gazette</v-toolbar-title>
+      <v-toolbar-title>Ctrl, Alt, Delete</v-toolbar-title>
     </v-toolbar>
   </v-content>
 </template>
