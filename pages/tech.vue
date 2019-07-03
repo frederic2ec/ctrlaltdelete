@@ -16,7 +16,7 @@
                 <h3 class="headline mb-0">
                   {{ post.title }}
                 </h3>
-                <div>{{ post.summary }}</div>
+                <div>{{ post.summary | striphtml }}</div>
               </div>
             </v-card-title>
             <v-card-actions>
@@ -35,15 +35,14 @@
 import _ from 'lodash'
 
 export default {
-  name: 'Politics',
+  name: 'Tech',
   data() {
     return {
       posts: [],
       url: [
-        'http://feeds.abcnews.com/abcnews/politicsheadlines',
-        'http://feeds.bbci.co.uk/news/politics/rss.xml',
-        'http://feeds.washingtonpost.com/rss/politics',
-        'http://feeds.feedburner.com/timeblogs/swampland?format=xml'
+        'https://www.cnet.com/rss/news/',
+        'https://techcrunch.com/feed/',
+        'http://feeds.arstechnica.com/arstechnica/index/?format=xml'
       ]
     }
   },
@@ -88,7 +87,7 @@ export default {
   },
   head() {
     return {
-      title: 'Politics'
+      title: 'Tech'
     }
   }
 }

@@ -48,29 +48,24 @@ export default {
       drawer: false,
       items: [
         {
-          icon: 'fas fa-newspaper',
-          title: 'News',
+          icon: 'fas fa-gamepad',
+          title: 'Gaming',
           to: '/'
         },
         {
-          icon: 'fas fa-bullhorn',
-          title: 'Politics',
-          to: '/politics'
+          icon: 'fas fa-microchip',
+          title: 'Tech',
+          to: '/tech'
         },
         {
-          icon: 'fas fa-handshake',
-          title: 'Business',
-          to: '/business'
+          icon: 'fab fa-apple',
+          title: 'Apple',
+          to: '/apple'
         },
         {
-          icon: 'fas fa-flask',
-          title: 'Science',
-          to: '/science'
-        },
-        {
-          icon: 'fas fa-film',
-          title: 'Culture',
-          to: '/culture'
+          icon: 'fab fa-android',
+          title: 'Android',
+          to: '/android'
         }
       ]
     }

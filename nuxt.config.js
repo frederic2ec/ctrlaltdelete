@@ -44,6 +44,7 @@ export default {
   plugins: [
     { src: '~/plugins/vue-scroll-reveal', ssr: false },
     '~plugins/formatDate.js',
+    '~plugins/stripHtml.js',
     { src: '~/plugins/vuex-persist', ssr: false }
   ],
   /*
@@ -74,7 +75,7 @@ export default {
     pageLevelAds: true
   },
   googleAnalytics: {
-    id: 'UA-33196438-6'
+    id: 'UA-33196438-3'
   },
   /*
    ** Build configuration

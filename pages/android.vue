@@ -16,7 +16,7 @@
                 <h3 class="headline mb-0">
                   {{ post.title }}
                 </h3>
-                <div>{{ post.summary }}</div>
+                <div>{{ post.summary | striphtml }}</div>
               </div>
             </v-card-title>
             <v-card-actions>
@@ -35,15 +35,13 @@
 import _ from 'lodash'
 
 export default {
-  name: 'Culture',
+  name: 'Tech',
   data() {
     return {
       posts: [],
       url: [
-        'https://abcnews.go.com/abcnews/entertainmentheadlines',
-        'http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml',
-        'http://feeds.washingtonpost.com/rss/entertainment',
-        'http://feeds2.feedburner.com/time/entertainment?format=xml'
+        'https://www.androidpolice.com/topics/news/feed/',
+        'https://www.androidpit.com/feed/main.xml'
       ]
     }
   },
@@ -88,7 +86,7 @@ export default {
   },
   head() {
     return {
-      title: 'Culture'
+      title: 'Tech'
     }
   }
 }

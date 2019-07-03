@@ -16,7 +16,7 @@
                 <h3 class="headline mb-0">
                   {{ post.title }}
                 </h3>
-                <div>{{ post.summary }}</div>
+                <div>{{ post.summary | striphtml }}</div>
               </div>
             </v-card-title>
             <v-card-actions>
@@ -35,18 +35,15 @@
 import _ from 'lodash'
 
 export default {
-  name: 'News',
+  name: 'Gaming',
   data() {
     return {
       posts: [],
       url: [
-        'https://abcnews.go.com/abcnews/internationalheadlines',
-        'http://feeds.abcnews.com/abcnews/usheadlines',
-        'http://feeds.bbci.co.uk/news/uk/rss.xml',
-        'http://feeds.bbci.co.uk/news/world/rss.xml',
-        'http://feeds.washingtonpost.com/rss/national',
-        'http://feeds.washingtonpost.com/rss/world',
-        'https://feeds2.feedburner.com/time/world?format=xml'
+        'https://www.gamezone.com/feed/',
+        'http://feeds.ign.com/ign/news?format=xml',
+        'https://kotaku.com/rss',
+        'https://www.pcgamer.com/rss'
       ]
     }
   },
@@ -66,6 +63,7 @@ export default {
 
       for (let i = 0; i < this.url.length; i++) {
         const req = request(CORS_PROXY + this.url[i])
+
         const feedparser = new FeedParser()
         req.on('response', (res) => {
           const stream = req // `this` is `req`, which is a stream
@@ -91,7 +89,7 @@ export default {
   },
   head() {
     return {
-      title: 'News'
+      title: 'Gaming'
     }
   }
 }

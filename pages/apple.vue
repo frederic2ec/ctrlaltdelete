@@ -16,7 +16,7 @@
                 <h3 class="headline mb-0">
                   {{ post.title }}
                 </h3>
-                <div>{{ post.summary }}</div>
+                <div>{{ post.summary | striphtml }}</div>
               </div>
             </v-card-title>
             <v-card-actions>
@@ -35,14 +35,14 @@
 import _ from 'lodash'
 
 export default {
-  name: 'Business',
+  name: 'Tech',
   data() {
     return {
       posts: [],
       url: [
-        'http://feeds.bbci.co.uk/news/business/rss.xml',
-        'http://feeds.washingtonpost.com/rss/business',
-        'http://feeds2.feedburner.com/time/business?format=xml'
+        'https://9to5mac.com/feed/',
+        'https://www.macworld.co.uk/news/apple/rss',
+        'https://appleinsider.com/rss/topic/apple+news'
       ]
     }
   },
@@ -87,7 +87,7 @@ export default {
   },
   head() {
     return {
-      title: 'Business'
+      title: 'Tech'
     }
   }
 }
