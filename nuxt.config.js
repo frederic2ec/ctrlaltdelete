@@ -55,9 +55,11 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module',
     '@nuxtjs/google-adsense',
     '@nuxtjs/google-analytics'
+  ],
+  devModules: [
+    '@nuxtjs/eslint-module'
   ],
   /*
    ** Axios module configuration
