@@ -73,7 +73,7 @@ export default {
   vuetify: {},
 
   'google-adsense': {
-    id: '5159235346945401',
+    id: 'ca-pub-5159235346945401',
     pageLevelAds: true
   },
   googleAnalytics: {
